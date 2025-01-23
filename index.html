@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:image" content="https://th.bing.com/th/id/OIP.fPeR0hoK61Hf2ghhQGV5_QHaEi?w=296&h=181&c=7&r=0&o=5&pid=1.7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <link rel="shortcut icon" href="box.png" type="image/x-icon">
+    <style>
+        .div1,.div2,.div3,.div4,h1{
+            text-align: center;
+        }
+        h1{
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: darkgray;
+        }
+        .div1{
+            border:2px groove red;
+            border-end-start-radius: 30px;
+            width: 40%;
+            height: 400px;
+            margin: auto;
+        }
+        .div2{
+            border: 2px ridge yellow;
+            border-radius: 2px;
+            border-start-end-radius: 30px;
+            width: 80%;
+            height: 300px;
+            margin-left: 50px;
+            
+        }
+        .div3{
+            border: 2px dotted gray;
+            width: 80%;
+            height: 200px;
+            margin-left: 40px;
+        }
+        .div4{
+            border: 2px double rgb(154, 16, 154);
+            border-radius: 10px;
+            width: 80%;
+            height: 100px;
+            margin-left: 30px;
+        }
+        .div1hover:hover{
+            background-color: aqua;
+        }
+        .div2hover:hover{
+            background-color: rgb(206, 160, 235);
+        }
+        .div3hover:hover{
+            background-color: rgb(194, 208, 235);
+        }
+        .div4hover:hover{
+            background-color: rgb(246, 158, 221);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS BOX MODEL</h1>
+    <div class="div1 div1hover">
+        <p>Margin</p>
+        <div class="div2 div2hover">
+            <p>Border</p>
+            <div class="div3 div3hover">
+                <p>Padding</p>
+                <div class="div4 div4hover">
+                    <p>Content</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
