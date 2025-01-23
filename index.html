@@ -45,29 +45,39 @@
             height: 100px;
             margin-left: 30px;
         }
-        .div1hover:hover{
+        .div1:hover{
             background-color: aqua;
         }
-        .div2hover:hover{
+        .div2:hover{
             background-color: rgb(206, 160, 235);
         }
-        .div3hover:hover{
+        .div3:hover{
             background-color: rgb(194, 208, 235);
         }
-        .div4hover:hover{
+        .div4:hover{
             background-color: rgb(246, 158, 221);
         }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .div1, .div2, .div3, .div4 {
+                max-width: 95%;
+                min-height: auto; /* Adapt height */
+                padding: 10px;
+            }}
     </style>
 </head>
 <body>
     <h1>CSS BOX MODEL</h1>
-    <div class="div1 div1hover">
+    <div class="div1">
         <p>Margin</p>
-        <div class="div2 div2hover">
+        <div class="div2">
             <p>Border</p>
-            <div class="div3 div3hover">
+            <div class="div3">
                 <p>Padding</p>
-                <div class="div4 div4hover">
+                <div class="div4">
                     <p>Content</p>
                 </div>
             </div>
